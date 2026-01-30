@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Diagnosticos</title>
+  <link rel="stylesheet" href="diagnostics.css" />
+</head>
+<body>
+  <header>
+    <h1>Diagnosticos</h1>
+    <p>Recolecta el diagnostico de tu navegador. Usa los botones para actualizar, copiar o descargar el reporte.</p>
+    <nav>
+      <a href="index.html">Back</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="controls">
+      <button id="btn-refresh">Refrescar</button>
+      <button id="btn-copy">Copiar JSON</button>
+      <button id="btn-download">Descargar Reporte</button>
+    </div>
+
+    <section id="summary" class="card">
+      <h2>Resumen</h2>
+      <div id="summary-content">Cargando…</div>
+    </section>
+
+    <section id="details" class="card">
+      <h2>JSON Completo</h2>
+      <pre id="json-output">Cargando…</pre>
+    </section>
+  </main>
+
+  <footer>
+    <small>Diagnosticos.</small>
+  </footer>
+
+  <script src="diagnostics.js"></script>
+</body>
+</html>
