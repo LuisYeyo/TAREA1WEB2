@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Menú de Comida</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Menú de Comida</h1>
+    <p class="subtitle">Selecciona una categoría para filtrar</p>
+    <div class="controls">
+      <input id="search" placeholder="Buscar plato..." aria-label="Buscar plato">
+      <div class="categories">
+        <button class="cat-btn active" data-cat="all">Todos</button>
+        <button class="cat-btn" data-cat="entradas">Entradas</button>
+        <button class="cat-btn" data-cat="principales">Platos<br>principales</button>
+        <button class="cat-btn" data-cat="postres">Postres</button>
+        <button class="cat-btn" data-cat="bebidas">Bebidas</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="menu-grid" id="menu">
+      <article class="card" data-cat="entradas">
+        <img class="thumb" src="assets/bruschetta.svg" alt="Bruschetta">
+        <h3>Bruschetta</h3>
+        <p class="desc">Pan tostado con tomate, ajo y albahaca.</p>
+        <p class="price">$5.50</p>
+      </article>
+
+      <article class="card" data-cat="entradas">
+        <img class="thumb" src="assets/ensalada.svg" alt="Ensalada César">
+        <h3>Ensalada Cesar</h3>
+        <p class="desc">Lechuga, crutones y aderezo especial.</p>
+        <p class="price">$6.00</p>
+      </article>
+
+      <article class="card" data-cat="principales">
+        <img class="thumb" src="assets/pollo.svg" alt="Pollo al Horno">
+        <h3>Pollo al Horno</h3>
+        <p class="desc">Pollo marinado con hierbas, acompañado de papas.</p>
+        <p class="price">$12.00</p>
+      </article>
+
+      <article class="card" data-cat="principales">
+        <img class="thumb" src="assets/spaghetti.svg" alt="Spaghetti Bolognesa">
+        <h3>Spaghetti Bolognesa</h3>
+        <p class="desc">Salsa de carne casera y parmesano.</p>
+        <p class="price">$11.00</p>
+      </article>
+
+      <article class="card" data-cat="postres">
+        <img class="thumb" src="assets/tiramisu.svg" alt="Tiramisú">
+        <h3>Tiramisú</h3>
+        <p class="desc">Postre clásico italiano con mascarpone.</p>
+        <p class="price">$4.50</p>
+      </article>
+
+      <article class="card" data-cat="postres">
+        <img class="thumb" src="assets/helado.svg" alt="Helado Artesanal">
+        <h3>Helado Artesanal</h3>
+        <p class="desc">Sabores rotativos, servido en copa.</p>
+        <p class="price">$3.50</p>
+      </article>
+
+      <article class="card" data-cat="bebidas">
+        <img class="thumb" src="assets/limonada.svg" alt="Limonada">
+        <h3>Limonada</h3>
+        <p class="desc">Limonada fresca con hierbabuena.</p>
+        <p class="price">$2.50</p>
+      </article>
+
+      <article class="card" data-cat="bebidas">
+        <img class="thumb" src="assets/cafe.svg" alt="Café Espresso">
+        <h3>Café Espresso</h3>
+        <p class="desc">Café intenso recién hecho.</p>
+        <p class="price">$2.00</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="menu.js"></script>
+</body>
+</html>
